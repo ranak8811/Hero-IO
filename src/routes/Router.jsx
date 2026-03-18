@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -15,7 +16,7 @@ const AppRoutes = () => {
       />
       <Route
         path="*"
-        element={<div className="pt-32 text-center text-2xl text-red-500">404 - Page Not Found</div>}
+        element={<NotFound />}
       />
     </Routes>
   );
