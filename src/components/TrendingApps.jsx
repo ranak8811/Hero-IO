@@ -3,7 +3,6 @@ import { appsData } from "../data/apps";
 import AppCard from "./AppCard";
 
 const TrendingApps = () => {
-  // Get first 8 apps for the trending section as per requirements
   const trendingApps = appsData.slice(0, 8);
 
   return (

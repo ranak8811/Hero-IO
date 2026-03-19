@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import AllApps from "../pages/AllApps";
 import AppDetails from "../pages/AppDetails";
+import Installation from "../pages/Installation";
 import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
@@ -10,10 +11,7 @@ const AppRoutes = () => {
       <Route path="/" element={<Home />} />
       <Route path="/apps" element={<AllApps />} />
       <Route path="/app/:id" element={<AppDetails />} />
-      <Route
-        path="/installation"
-        element={<div className="pt-32 text-center text-2xl">Installation Page (Coming Soon)</div>}
-      />
+      <Route path="/installation" element={<Installation />} />
       <Route
         path="*"
         element={<NotFound />}

@@ -1,16 +1,25 @@
-# React + Vite
+# HERO.IO - Productive Apps Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+HERO.IO is a modern web application designed to showcase a collection of highly productive digital experiences. From focus timers to task managers, the platform allows users to explore, search, and manage their favorite productivity apps. Users can view detailed information about each app, including performance metrics and user ratings visualized through interactive charts. The application also features a "My Installation" section where users can track and manage their installed apps using local storage persistence.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **Frontend Framework:** React 19
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS (Vanilla CSS for custom styles)
+- **Routing:** React Router Dom 7
+- **Charts:** Recharts
+- **Notifications:** React Toastify
+- **Icons:** React Icons
+- **State Management:** React Hooks (useState, useEffect, useMemo)
+- **Storage:** Browser LocalStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop devices.
+- **Home Page:** Features a dynamic banner, site statistics, and trending apps.
+- **All Apps Page:** Live, case-insensitive search functionality with loading animations.
+- **App Details:** Comprehensive app information with interactive Recharts bar charts for ratings.
+- **App Installation:** Mock installation system using LocalStorage to persist user data.
+- **Management:** "My Installation" page to view, sort (by downloads), and uninstall apps.
+- **Error Handling:** Custom 404 pages and "App Not Found" components for robust user experience.
+- **Interactive UI:** Smooth transitions, loading animations, and toast notifications.

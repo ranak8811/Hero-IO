@@ -11,14 +11,12 @@ const AllApps = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    // Requirements: Implement live search with loading animation
     const filterApps = () => {
       setIsLoading(true);
-      
-      // Simulate a small delay for search operation to show loading animation (Challenge Part)
+
       const timeoutId = setTimeout(() => {
         const filtered = appsData.filter((app) =>
-          app.title.toLowerCase().includes(searchTerm.toLowerCase())
+          app.title.toLowerCase().includes(searchTerm.toLowerCase()),
         );
         setFilteredApps(filtered);
         setIsLoading(false);
@@ -33,7 +31,6 @@ const AllApps = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20 bg-gray-50/30">
-      {/* Show Loader during search operation */}
       {isLoading && <Loader />}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +49,7 @@ const AllApps = () => {
           <div className="text-xl font-bold text-[#001427]">
             ({filteredApps.length}) Apps Found
           </div>
-          
+
           <div className="relative w-full md:w-96">
             <input
               type="text"

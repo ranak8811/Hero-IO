@@ -15,7 +15,6 @@
   }
 }
 
-/* Custom styles if needed beyond Tailwind v4 */
 body {
   @apply text-gray-900 antialiased;
 }

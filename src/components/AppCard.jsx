@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom";
 const AppCard = ({ app }) => {
   const navigate = useNavigate();
 
-  // Helper to format downloads (e.g., 29600000 -> 29.6M)
+  // Helper to format downloads
   const formatDownloads = (num) => {
-    if (num >= 1000000) return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (num >= 1000000)
+      return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
     if (num >= 1000) return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
     return num;
   };
